@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title>Chrysalism Foundation — Vendor-Neutral Security &amp; Infrastructure</title>
+  <meta name="description" content="Chrysalism is a registered 501(c)(3) non-profit foundation providing trusted operational advisory programs and sustaining permanent, open-source security tools.">
+  <meta name="keywords" content="cybersecurity, open source, non-profit, technology sanctuary, IT consulting, AI advisory, CrowdStrike alternative, Semgrep alternative, vCISO, compliance">
+  <meta name="author" content="Chrysalism Foundation">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chrysalism Foundation — Vendor-Neutral Security &amp; Infrastructure">
+  <meta property="og:description" content="Operational advisory programs and permanent, vendor-neutral security shields.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chrysalism.org">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ TOP UTILITY BAR ============ -->
+  <div class="top-bar" id="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-announcement">
+        <span class="nonprofit-badge">501(c)(3) Non-Profit</span>
+        <span>Providing stability in a volatile technology landscape.</span>
+        <a href="#support" id="announcement-link">Our Commitment to Operational Security</a>
+      </div>
+      <div class="top-bar-links">
+        <a href="#governance" id="top-bar-gov">Governance &amp; Charter</a>
+        <a href="#community" id="top-bar-comm">Shared Commons</a>
+        <a href="#" id="top-bar-signin">Sign In</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ NAVIGATION HEADER ============ -->
+  <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand" id="nav-brand">
+        <span class="brand-icon" aria-hidden="true">🦋</span>
+        Chrysalism
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <!-- Our Mission -->
+        <div class="nav-item">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Our Mission <span class="caret" aria-hidden="true">▼</span>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="#pillars" class="nav-dropdown-item" role="menuitem">
+              <strong>Foundation Principles</strong>
+              <span>Our commitment to shielding you from technical anxiety</span>
+            </a>
+            <a href="#governance" class="nav-dropdown-item" role="menuitem">
+              <strong>Protected Stability</strong>
+              <span>How our charter prevents private acquisition or forced licensing shifts</span>
+            </a>
+            <a href="#press" class="nav-dropdown-item" role="menuitem">
+              <strong>Announcements &amp; Releases</strong>
+              <span>Program updates and new repository coordinates</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hosted Projects -->
+        <div class="nav-item">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Hosted Projects <span class="caret" aria-hidden="true">▼</span>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="#landscape" class="nav-dropdown-item" role="menuitem">
+              <strong>Sovereign Landscape</strong>
+              <span>Permanent, unencumbered drop-in digital shields</span>
+            </a>
+            <a href="#landscape" class="nav-dropdown-item" role="menuitem">
+              <strong>Host a Project</strong>
+              <span>Shield your codebase under our perpetual public trust</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Advisory Care -->
+        <div class="nav-item">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Advisory Care <span class="caret" aria-hidden="true">▼</span>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="#services" class="nav-dropdown-item" role="menuitem">
+              <strong>Program Portfolio</strong>
+              <span>IT architecture, cybersecurity, and GRC pathways</span>
+            </a>
+            <a href="#services" class="nav-dropdown-item" role="menuitem">
+              <strong>Advisory Consultation</strong>
+              <span>Apply for zero-cost operational assistance program</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Shared Haven -->
+        <div class="nav-item">
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false">
+            Community <span class="caret" aria-hidden="true">▼</span>
+          </button>
+          <div class="nav-dropdown" role="menu">
+            <a href="#community" class="nav-dropdown-item" role="menuitem">
+              <strong>Shared Technical Channels</strong>
+              <span>Real-time peer coordination channels to share the load</span>
+            </a>
+            <a href="#community" class="nav-dropdown-item" role="menuitem">
+              <strong>Contributor Guide</strong>
+              <span>Help maintain public utility security tools</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#services" class="btn nav-cta-btn" id="nav-cta-action">Request Advisory</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tagline" id="hero-tag">
+          <span class="dot" aria-hidden="true"></span>
+          Vendor-Neutral Open Source Foundation
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          Stability in a volatile technology <span class="highlight">landscape</span>
+        </h1>
+        <p class="hero-subtitle" id="hero-subtitle">
+          The engineering landscape is moving at a volatile, uncertain pace. Chrysalism is a vendor-neutral, 501(c)(3) non-profit foundation established to protect your engineering sovereignty. We maintain permanent, unencumbered open-source tools and deliver trusted architectural advisory to ensure operational stability.
+        </p>
+        <div class="hero-buttons" id="hero-buttons">
+          <a href="#landscape" class="btn btn-primary" id="hero-btn-landscape">Explore Hosted Projects</a>
+          <a href="#services" class="btn btn-secondary" id="hero-btn-services">Connect with an Advisor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MISSION METRICS ============ -->
+  <section class="metrics-section" id="metrics">
+    <div class="container">
+      <div class="metrics-grid" id="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-num">501(c)(3) Non-Profit</div>
+          <div class="metric-label">Established strictly for public benefit, free from commercial motives</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">Zero Vendor Lock-In</div>
+          <div class="metric-label">Permanently free from commercial pricing hikes and license shifts</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">Apache 2.0 Core</div>
+          <div class="metric-label">Guaranteed open-source standards that cannot be bought or enclosed</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">Community Steered</div>
+          <div class="metric-label">Collaborative governance to share operational and structural burdens</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PILLARS / MISSION ============ -->
+  <section class="section" id="pillars">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Core Safeguards</span>
+        <h2 class="section-title">Delivering Calm &amp; Trust in Tech</h2>
+        <p class="section-description">
+          Our foundation is structured to shield enterprise security and operational architecture from private equity acquisitions, sudden price increases, and volatile license pivots.
+        </p>
+      </div>
+
+      <div class="pillars-grid" id="pillars-grid">
+        <!-- Pillar 1 -->
+        <div class="pillar-card pillar-blue" id="pillar-card-advisory">
+          <div class="pillar-icon" aria-hidden="true">🧭</div>
+          <h3>Structural &amp; Strategic Advisory</h3>
+          <p>Navigating volatile technology shifts shouldn't compromise your operations. We offer direct, trusted guidance on cloud operations, cybersecurity posture, and ethical AI integration—listening to your constraints and planning without commercial vendor pressure.</p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="pillar-card pillar-amber" id="pillar-card-landscape">
+          <div class="pillar-icon" aria-hidden="true">🛡️</div>
+          <h3>Open Source Security Core</h3>
+          <p>Sustaining robust, enterprise-grade open-source replacements for complex proprietary security software. We ensure your core digital defenses remain permanently unencumbered and under your direct control.</p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="pillar-card pillar-lavender" id="pillar-card-charter">
+          <div class="pillar-icon" aria-hidden="true">📜</div>
+          <h3>Irrevocable Legal Protection</h3>
+          <p>Chrysalism is legally chartered to lock in vendor-neutrality. Our codebases are irrevocably bound under standard approved OSI licenses, permanently protecting them from private equity acquisitions or forced commercial monetization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS LANDSCAPE DIRECTORY ============ -->
+  <section class="section alt-bg" id="landscape">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Open Source Portfolio</span>
+        <h2 class="section-title">Hosted Projects Landscape</h2>
+        <p class="section-description">
+          Explore our portfolio of vendor-neutral security and compliance tooling. Built transparently, audit-tested, and ready for drop-in deployment without commercial friction.
+        </p>
+      </div>
+
+      <div class="landscape-filter-bar" id="landscape-filter-bar">
+        <div class="landscape-tabs">
+          <span class="landscape-tab active" id="tab-all">All Hosted Projects</span>
+          <span class="landscape-tab" id="tab-graduated">Mature &amp; Graduated</span>
+          <span class="landscape-tab" id="tab-incubating">Incubating</span>
+        </div>
+        <div class="landscape-info">Showing 4 hosted projects under Apache 2.0 charter</div>
+      </div>
+
+      <div class="projects-table-container">
+        <table class="projects-table" id="projects-table" aria-label="Hosted Projects Landscape">
+          <thead>
+            <tr>
+              <th scope="col">Project Identifier</th>
+              <th scope="col">Category</th>
+              <th scope="col">Foundation Stage</th>
+              <th scope="col">License Core</th>
+              <th scope="col">Technical Core</th>
+              <th scope="col">Access Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Project 1 -->
+            <tr data-stage="graduated">
+              <td>
+                <div class="project-name-col">
+                  <div class="project-logo-circle guard" aria-hidden="true">🛡️</div>
+                  <div class="project-details">
+                    <strong>Chrysalis Guard</strong>
+                    <span>Endpoint security that keeps your network protected, audited, and completely under your control.</span>
+                  </div>
+                </div>
+              </td>
+              <td>Endpoint Security / EDR</td>
+              <td><span class="status-badge mature">Graduated</span></td>
+              <td><span class="license-badge">Apache 2.0</span></td>
+              <td>Rust &amp; eBPF</td>
+              <td><a href="#" id="guard-github-link">GitHub Repo →</a></td>
+            </tr>
+            <!-- Project 2 -->
+            <tr data-stage="incubating">
+              <td>
+                <div class="project-name-col">
+                  <div class="project-logo-circle scan" aria-hidden="true">🔬</div>
+                  <div class="project-details">
+                    <strong>Chrysalis Scan</strong>
+                    <span>Fast, locally-run code analysis to identify potential security flaws early.</span>
+                  </div>
+                </div>
+              </td>
+              <td>Static Code Analysis</td>
+              <td><span class="status-badge incubating">Incubating</span></td>
+              <td><span class="license-badge">Apache 2.0</span></td>
+              <td>Go &amp; Treesitter</td>
+              <td><a href="#" id="scan-github-link">GitHub Repo →</a></td>
+            </tr>
+            <!-- Project 3 -->
+            <tr data-stage="incubating">
+              <td>
+                <div class="project-name-col">
+                  <div class="project-logo-circle shield" aria-hidden="true">🧬</div>
+                  <div class="project-details">
+                    <strong>Chrysalis Shield</strong>
+                    <span>Orchestrates secrets detection, container scans, and software supply chain integrity.</span>
+                  </div>
+                </div>
+              </td>
+              <td>Software Supply Security</td>
+              <td><span class="status-badge incubating">Incubating</span></td>
+              <td><span class="license-badge">Apache 2.0</span></td>
+              <td>Python &amp; Rego</td>
+              <td><a href="#" id="shield-github-link">GitHub Repo →</a></td>
+            </tr>
+            <!-- Project 4 -->
+            <tr data-stage="incubating">
+              <td>
+                <div class="project-name-col">
+                  <div class="project-logo-circle comply" aria-hidden="true">📜</div>
+                  <div class="project-details">
+                    <strong>Chrysalis Comply</strong>
+                    <span>Automated compliance evidence collection and integration with audit frameworks.</span>
+                  </div>
+                </div>
+              </td>
+              <td>GRC &amp; Compliance Audit</td>
+              <td><span class="status-badge sandbox">Sandbox</span></td>
+              <td><span class="license-badge">Apache 2.0</span></td>
+              <td>TypeScript</td>
+              <td><a href="#" id="comply-github-link">GitHub Repo →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES CATALOG ============ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Advisory Programs</span>
+        <h2 class="section-title">Operational Strategy &amp; Guidance Programs</h2>
+        <p class="section-description">
+          We bridge technological skill gaps by supplying reliable operational assistance to teams globally. We maintain strict neutrality and recommend only open, standard-based solutions.
+        </p>
+      </div>
+
+      <div class="services-catalog" id="services-catalog">
+        <!-- Card 1 -->
+        <div class="catalog-card" id="service-card-ops">
+          <h3>
+            <span class="catalog-card-icon" aria-hidden="true">🏗️</span>
+            IT Architecture &amp; Cloud Ops
+          </h3>
+          <p>Blueprint design for standard multi-region cloud infrastructures, migration frameworks, containerization strategy, and developer workflow automation.</p>
+          <div class="catalog-features">
+            <div class="catalog-feature-item">Multi-cloud and local deployment planning</div>
+            <div class="catalog-feature-item">Infrastructure-as-Code audit &amp; automation</div>
+            <div class="catalog-feature-item">Performance scaling diagnostics</div>
+          </div>
+          <div class="catalog-card-footer">
+            <span class="price-indicator">Low / No Cost</span>
+            <a href="#" class="btn btn-outline" id="service-ops-apply">Request Advisory Consultation</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="catalog-card" id="service-card-ciso">
+          <h3>
+            <span class="catalog-card-icon" aria-hidden="true">🛡️</span>
+            vCISO &amp; Cybersecurity Posture
+          </h3>
+          <p>Strategic information security guidance, incident runbook audits, threat identification models, and comprehensive technology defense planning.</p>
+          <div class="catalog-features">
+            <div class="catalog-feature-item">Strategic virtual CISO advisory program</div>
+            <div class="catalog-feature-item">Threat assessment and mock compromise drills</div>
+            <div class="catalog-feature-item">Vulnerability tracking setup</div>
+          </div>
+          <div class="catalog-card-footer">
+            <span class="price-indicator">Low / No Cost</span>
+            <a href="#" class="btn btn-outline" id="service-ciso-apply">Request Advisory Consultation</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="catalog-card" id="service-card-grc">
+          <h3>
+            <span class="catalog-card-icon" aria-hidden="true">📋</span>
+            Compliance &amp; GRC Preparedness
+          </h3>
+          <p>Detailed readiness planning for major frameworks such as SOC 2, ISO 27001, HIPAA, FedRAMP, and CMMC. Audit preparation without high firm overhead.</p>
+          <div class="catalog-features">
+            <div class="catalog-feature-item">Control framework design and mapping</div>
+            <div class="catalog-feature-item">Internal audit readiness reviews</div>
+            <div class="catalog-feature-item">Evidence collection automation setup</div>
+          </div>
+          <div class="catalog-card-footer">
+            <span class="price-indicator">Low / No Cost</span>
+            <a href="#" class="btn btn-outline" id="service-grc-apply">Request Advisory Consultation</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="catalog-card" id="service-card-ai">
+          <h3>
+            <span class="catalog-card-icon" aria-hidden="true">🤖</span>
+            Enterprise AI Strategy &amp; Ethics
+          </h3>
+          <p>Ethical AI policy generation, validation framework deployment, local open model evaluation, and safe data retrieval architecture planning.</p>
+          <div class="catalog-features">
+            <div class="catalog-feature-item">Data safety boundary blueprints</div>
+            <div class="catalog-feature-item">Validation frameworks for localized LLMs</div>
+            <div class="catalog-feature-item">Safe LLM application design patterns</div>
+          </div>
+          <div class="catalog-card-footer">
+            <span class="price-indicator">Low / No Cost</span>
+            <a href="#" class="btn btn-outline" id="service-ai-apply">Request Advisory Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GOVERNANCE & CHARTER ============ -->
+  <section class="section alt-bg" id="governance">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Governance Model</span>
+        <h2 class="section-title">Public Trust &amp; Neutral Governance</h2>
+        <p class="section-description">
+          Chrysalism functions strictly as a public benefit organization. All steering board meetings are logged, and license reviews are public.
+        </p>
+      </div>
+
+      <div class="governance-layout">
+        <div class="governance-text">
+          <h3>The Vendor-Neutral Guarantee</h3>
+          <p>
+            Much like the Linux Foundation and Apache Software Foundation, Chrysalism separates open core security codebase control from commercial platform initiatives.
+          </p>
+          <div class="governance-bullets">
+            <div class="governance-bullet-item">
+              <span class="governance-bullet-item-icon">⚖️</span>
+              <div class="governance-bullet-item-text">
+                <strong>Public Steering Committee</strong>
+                <span>Direct community-led voting on repository roadmap and standards compliance.</span>
+              </div>
+            </div>
+            <div class="governance-bullet-item">
+              <span class="governance-bullet-item-icon">🔐</span>
+              <div class="governance-bullet-item-text">
+                <strong>Irrevocable License Protection</strong>
+                <span>All code hosted is bound irrevocably under standard approved OSI licenses.</span>
+              </div>
+            </div>
+            <div class="governance-bullet-item">
+              <span class="governance-bullet-item-icon">💎</span>
+              <div class="governance-bullet-item-text">
+                <strong>Transparent Funding Model</strong>
+                <span>Operating capital is derived entirely from public donations, grants, and sponsors.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="governance-charter-box" id="governance-charter-box">
+          <h4>Chrysalism Foundation Charter</h4>
+          <p>
+            "To safeguard and scale standard digital defense mechanisms by offering top-tier, low-cost architectural advice and ensuring the continuous vendor-neutral development of secure utility programs."
+          </p>
+          <p>
+            Chrysalism operations comply fully with 501(c)(3) guidelines. No director or contributor may claim intellectual property monopolies on hosted repositories.
+          </p>
+          <a href="#" class="btn btn-primary" id="charter-download">Download Charter PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRESS ROOM / NEWS ============ -->
+  <section class="section" id="press">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Foundation Announcements</span>
+        <h2 class="section-title">Press Releases &amp; Program Updates</h2>
+        <p class="section-description">
+          Follow the latest official statements, project updates, and governance logs from the Chrysalism foundation.
+        </p>
+      </div>
+
+      <div class="press-grid" id="press-grid">
+        <!-- Card 1 -->
+        <div class="press-card" id="press-card-launch">
+          <div class="press-tag-bar">
+            <span class="press-tag">Foundation</span>
+            <span class="press-date">June 2026</span>
+          </div>
+          <div class="press-body">
+            <h3><a href="#" id="press-title-1">Announcing Chrysalism Foundation Formation</a></h3>
+            <p>Formally establishing Chrysalism as a vendor-neutral non-profit foundation to protect open security tools and provide critical architecture consulting services.</p>
+            <a href="#" class="press-read-more" id="press-read-1">Read Press Release →</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="press-card" id="press-card-edr">
+          <div class="press-tag-bar">
+            <span class="press-tag">Tooling</span>
+            <span class="press-date">July 2026</span>
+          </div>
+          <div class="press-body">
+            <h3><a href="#" id="press-title-2">Chrysalis Guard Incubation Program Launch</a></h3>
+            <p>Our flagship endpoint defense engine Chrysalis Guard enters official foundation incubator status under standard Apache 2.0 license covenants.</p>
+            <a href="#" class="press-read-more" id="press-read-2">Read Technical Specs →</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="press-card" id="press-card-volunteers">
+          <div class="press-tag-bar">
+            <span class="press-tag">Community</span>
+            <span class="press-date">August 2026</span>
+          </div>
+          <div class="press-body">
+            <h3><a href="#" id="press-title-3">Steering Committee Nominations Now Open</a></h3>
+            <p>Nominations are now open for core developer and public operations advisor roles within the Chrysalism technical governance committee.</p>
+            <a href="#" class="press-read-more" id="press-read-3">Submit Nomination →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SUPPORT / DONATION BAR ============ -->
+  <section class="support-section" id="support">
+    <div class="container">
+      <div class="support-container">
+        <h2>Support Open &amp; Safe Digital Infrastructure</h2>
+        <p>
+          We rely on the generosity of corporate sponsors and individual contributors to continue our free advisory services and keep open source security tools independent.
+        </p>
+        <div class="support-actions">
+          <a href="#" class="btn btn-white" id="support-btn-donate">❤️ Make a Tax-Deductible Donation</a>
+          <a href="#" class="btn btn-secondary" id="support-btn-sponsor">Become a Member / Sponsor</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIRECTORY FOOTER ============ -->
+  <footer class="main-footer" id="main-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid" id="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#hero" class="nav-brand">
+            <span class="brand-icon" aria-hidden="true">🦋</span>
+            Chrysalism
+          </a>
+          <p>
+            Chrysalism Foundation is a registered 501(c)(3) non-profit public-benefit organization dedicated to building transparent security code and delivering trusted advice.
+          </p>
+          <div class="footer-social-icons" id="footer-socials">
+            <a href="#" class="footer-social-link" aria-label="GitHub" title="GitHub">⌨</a>
+            <a href="#" class="footer-social-link" aria-label="Discord" title="Discord">💬</a>
+            <a href="#" class="footer-social-link" aria-label="LinkedIn" title="LinkedIn">🔗</a>
+            <a href="#" class="footer-social-link" aria-label="Twitter" title="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <!-- Directory Columns -->
+        <div class="footer-col">
+          <h4>Our Mission</h4>
+          <ul>
+            <li><a href="#pillars">About Us</a></li>
+            <li><a href="#governance">Steering Board</a></li>
+            <li><a href="#governance">Our Charter</a></li>
+            <li><a href="#press">Foundation News</a></li>
+            <li><a href="#support">Memberships</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Sovereign Commons</h4>
+          <ul>
+            <li><a href="#landscape">All Projects</a></li>
+            <li><a href="#landscape">Chrysalis Guard</a></li>
+            <li><a href="#landscape">Chrysalis Scan</a></li>
+            <li><a href="#landscape">Chrysalis Shield</a></li>
+            <li><a href="#landscape">Chrysalis Comply</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Advisory Care</h4>
+          <ul>
+            <li><a href="#services">IT &amp; Ops Architecture</a></li>
+            <li><a href="#services">vCISO Consultation</a></li>
+            <li><a href="#services">Compliance &amp; GRC</a></li>
+            <li><a href="#services">AI Ethics Strategy</a></li>
+            <li><a href="#services">Consulting Intake</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#community">Contributor Guide</a></li>
+            <li><a href="#community">Developer Forum</a></li>
+            <li><a href="#community">Discussion Discord</a></li>
+            <li><a href="#">Security Reporting</a></li>
+            <li><a href="#">Trademark Guidelines</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom" id="footer-bottom">
+        <p>&copy; 2026 Chrysalism Foundation. All rights reserved. Code repositories licensed under Apache 2.0.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Trademark &amp; IP Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

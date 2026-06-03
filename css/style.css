@@ -272,19 +272,27 @@ p {
   justify-content: center;
 }
 
+.brand-chrysalism {
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  font-family: var(--font-mono);
+  font-size: 0.575rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  transform: rotate(180deg);
+  color: var(--text-primary);
+  margin-right: 0.5rem;
+  border-right: 1px solid var(--border-color);
+  padding-right: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .brand-stack {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.brand-main {
-  font-family: var(--font-heading);
-  font-size: 1.15rem;
-  font-weight: 850;
-  letter-spacing: -0.02em;
-  color: var(--text-primary);
-  line-height: 1.1;
 }
 
 .brand-sub {
@@ -294,11 +302,10 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-secondary);
-  margin-top: 1px;
 }
 
-/* Footer brand adjustments (footer is dark) */
-.main-footer .brand-main {
+/* Footer overrides (dark theme base) */
+.main-footer .brand-chrysalism {
   color: var(--text-dark-primary);
 }
 
@@ -306,7 +313,8 @@ p {
   color: var(--text-dark-secondary);
 }
 
-.main-footer .brand-the {
+.main-footer .brand-the,
+.main-footer .brand-chrysalism {
   border-right-color: rgba(255, 255, 255, 0.15);
 }
 

@@ -37,9 +37,9 @@
         minFontSize: 10,
         maxFontSize: 15,
         colors: [
-          'rgba(37, 99, 235, ',    // Glacier Blue (Fedora)
-          'rgba(217, 119, 6, ',    // Sunset Amber (Chrysalism)
-          'rgba(75, 85, 99, ',     // Slate Gray
+          'rgba(14, 165, 233, ',   // Ice Cyan
+          'rgba(249, 115, 22, ',   // Sunset Orange
+          'rgba(16, 185, 129, ',   // Mint Green
           'rgba(248, 250, 252, '   // Ice White
         ]
       };
@@ -108,10 +108,10 @@
       const ctx = this.ctx;
       ctx.clearRect(0, 0, this.width, this.height);
 
-      // Sky background gradient (Safe Harbor Indigo)
+      // Sky background gradient (Safe Indigo)
       const bgGrad = ctx.createLinearGradient(0, 0, 0, this.height);
-      bgGrad.addColorStop(0, '#081020');
-      bgGrad.addColorStop(1, '#0e1b35');
+      bgGrad.addColorStop(0, '#0f172a');
+      bgGrad.addColorStop(1, '#1e293b');
       ctx.fillStyle = bgGrad;
       ctx.fillRect(0, 0, this.width, this.height);
 

@@ -74,8 +74,8 @@
     createColumn(randomY = false) {
       const speed = this.config.minSpeed + Math.random() * (this.config.maxSpeed - this.config.minSpeed);
       const fontSize = Math.floor(this.config.minFontSize + Math.random() * (this.config.maxFontSize - this.config.minFontSize));
-      const colorTemplate = this.config.colors[Math.floor(Math.random() * this.config.colors.length)];
-      const text = this.codeSnippets[Math.floor(Math.random() * this.codeSnippets.length)];
+      const colorTemplate = this.config.colors.at(Math.floor(Math.random() * this.config.colors.length));
+      const text = this.codeSnippets.at(Math.floor(Math.random() * this.codeSnippets.length));
 
       return {
         x: Math.random() * this.width,
@@ -93,13 +93,13 @@
       const dtFactor = dt / 16; // normalizes to 60fps
 
       for (let i = 0; i < this.columns.length; i++) {
-        const col = this.columns[i];
+        const col = this.columns.at(i);
         col.y += col.speed * dtFactor;
         col.x += col.drift * dtFactor;
 
         // Reset column when falling off screen
         if (col.y > this.height + 40) {
-          this.columns[i] = this.createColumn(false);
+          this.columns.splice(i, 1, this.createColumn(false));
         }
       }
     }

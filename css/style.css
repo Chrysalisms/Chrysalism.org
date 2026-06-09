@@ -251,53 +251,22 @@ p {
 
 .brand-logo-container {
   display: flex;
-  align-items: center;
-  line-height: 1;
-}
-
-.brand-the {
-  writing-mode: vertical-rl;
-  text-transform: uppercase;
-  font-family: var(--font-mono);
-  font-size: 0.525rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  transform: rotate(180deg);
-  color: var(--cyan-primary);
-  margin-right: 0.4rem;
-  border-right: 1px solid var(--border-color);
-  padding-right: 0.3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.brand-chrysalism {
-  writing-mode: vertical-rl;
-  text-transform: uppercase;
-  font-family: var(--font-mono);
-  font-size: 0.575rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  transform: rotate(180deg);
-  color: var(--text-primary);
-  margin-right: 0.5rem;
-  border-right: 1px solid var(--border-color);
-  padding-right: 0.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.brand-stack {
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
+  line-height: 1.15;
+}
+
+.brand-main {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 850;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
 }
 
 .brand-sub {
   font-family: var(--font-mono);
-  font-size: 0.525rem;
+  font-size: 0.55rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -305,17 +274,12 @@ p {
 }
 
 /* Footer overrides (dark theme base) */
-.main-footer .brand-chrysalism {
+.main-footer .brand-main {
   color: var(--text-dark-primary);
 }
 
 .main-footer .brand-sub {
   color: var(--text-dark-secondary);
-}
-
-.main-footer .brand-the,
-.main-footer .brand-chrysalism {
-  border-right-color: rgba(255, 255, 255, 0.15);
 }
 
 .nav-links {
